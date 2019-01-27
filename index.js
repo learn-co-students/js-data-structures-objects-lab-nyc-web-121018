@@ -25,6 +25,10 @@ function destructivelyUpdateDriverWithKeyAndValue(driver, key, value){
 
 }
 
+
+// deletes `key` from a clone of driver and returns the new driver (it is non-destructive) 
+// does not modify the original driver (it is non-destructive)
+
 function deleteFromDriverByKey(driver, key){
 const newDriver = { ...driver};
 
@@ -33,6 +37,9 @@ const newDriver = { ...driver};
 
 }
 
+//
+// returns driver without the delete key/value pairs
+// modifies the original driver
 
 function destructivelyDeleteFromDriverByKey(driver, key){
 
